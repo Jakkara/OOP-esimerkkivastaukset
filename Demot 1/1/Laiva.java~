@@ -1,0 +1,23 @@
+public class Laiva{
+  
+/*Toteuta luokka Laiva. Luokan tulee sis‰lt‰‰ ainakin attribuutit nimi,
+ * pituus, syv‰ys ja nopeus solmuina. 
+ * Toteuta lis‰ksi metodi, jolla voidaan laskea kuinka nopeasti 
+ * laiva kulkee annetun matkan.  */
+  
+  public String name;
+  public int length;
+  public int draft;
+  public int speedKnots;
+  
+  public Laiva(String name, int length, int draft, int speedKnots){
+    this.name = name;
+    this.length = length;
+    this.draft = draft;
+    this.speedKnots = speedKnots;
+  }
+  public double travelTimeHours(int distanceKm){
+    int speedKmph = speedKnots * 1,852;
+    return (distanceKm/speedKmph);
+    
+               

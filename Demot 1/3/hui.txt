@@ -1,0 +1,36 @@
+Kurssi
+-Attribuutit
+--nimi
+--kurssin tunnus
+--tiedekunta
+--luentosalit ja -aikataulu
+--luennoitsijat
+--sallittu m‰‰r‰ oppilaita
+--oppilasm‰‰r‰
+--alku- ja loppup‰iv‰m‰‰r‰
+-Metodit
+--oppilaiden lis‰ys ja poisto kurssilta
+--kurssin aloitus ja lopetut
+--luentojen siirto
+
+Opiskelija
+-Attribuutit
+--nimi
+--opiskelijanumero
+--arvosana
+--p‰‰aine
+--k‰ytt‰j‰tunnus
+--osallistuu kursseille
+--suoritetut kurssit
+-Metodit
+--arvosanan asetus
+--opintopisteiden lis‰ys
+--osallistuttujen kurssien muutos
+
+Opettaja
+-Attribuutit
+--tiedekunta
+--aktiiviset kurssit
+--pidetyt kurssit
+-Metodit
+--kurssien vaihtaminen

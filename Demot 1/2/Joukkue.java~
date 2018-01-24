@@ -1,0 +1,35 @@
+import java.util.ArrayList;
+public class Joukkue{
+  /*Joukkue sis‰lt‰‰ n pelaajaa, ja sen tulee sis‰lt‰‰
+toiminnallisuudet pelaajien lis‰‰miseksi tai poistamiseksi joukkueesta. 
+Lis‰ksi Joukkue-luokan tulee sis‰lt‰‰ metodi, 
+jonka avulla voidaan tulostaa ruudulle kaikki joukkueen
+pelaajat tietoineen. */
+  
+  
+  public Joukkue(int n){
+  ArrayList<Pelaaja> team = new ArrayList<Pelaaja>(n);
+    addPlayer(team, "Jukka", 1, "ATT");
+    addPlayer(team, "Pekka", 2, "DEF");
+    addPlayer(team, "Jussi", 3, "GL");
+    
+  
+  }
+  public void removePlayer(ArrayList team, int number){
+    for (int i = 0; i < team.size(); i++){
+      if ((team.get(i)).jersey() == number){
+        team.set(i, null);
+      }
+  }
+  }
+  public void addPlayer(ArrayList team, String name, int number, String position){
+    team.add(new Pelaaja(name, number, position));
+  }
+  public void playerList(ArrayList team){
+    String information = "";
+    for (int i = 0; i < team.size(); i++){
+      information = (team.get(i)).playerInfo();
+      System.out.print(information);
+    }
+}
+}
